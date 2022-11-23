@@ -1,0 +1,64 @@
+.skills
+    padding: 60px 0
+    &__title
+        position: relative
+        text-align: center
+        @include before_circle
+        &::before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        text-align: center
+    &-grid
+        &__wrapper
+            display: grid
+            padding: 60px 0
+            grid-template-columns: repeat(4, 270px)
+            grid-template-rows: repeat(2, 270px)
+            gap: 13px
+        &__item
+            padding: 30px
+            border: solid 1px #000
+            display: flex
+            flex-direction: column
+            justify-content: center
+            img
+                display: block
+                width: fit-content
+        &__title
+            font-weight: bold
+            font-size: 14px
+            margin-top: 20px
+        &__descr
+            font-size: 12px
+            font-weight: 500
+            margin-top: 15px
+    .divider
+        margin: 22px auto 0
+    &-sliders
+        padding: 60px 0
+        display: grid
+        grid-template-columns: repeat(3, 350px)
+        grid-template-rows: repeat(3, 70px)
+        gap: 30px 45px
+        &__text
+            display: flex
+            justify-content: space-between
+            margin-top: 7px
+        &__title
+            padding-left: 10px
+            padding-top: 1px
+            position: relative
+            @include before_circle
+        &__outline
+            margin-top: 27px
+            width: 350px
+            height: 14px
+            border-radius: 4px
+            background-color: #e8e4de
+        &__slider
+            margin-top: -14px
+            height: 14px
+            border-radius: 4px
+            background-color: $main-color
