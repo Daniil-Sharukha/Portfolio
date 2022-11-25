@@ -1,0 +1,120 @@
+@media ( max-width: 1439px )
+    .sidepanel
+        display: none
+
+@media ( max-width: 1200px )
+    .container
+        max-width: 960px
+    .about
+        &__descr
+            &::before
+                left: -45px
+        &__flex
+            justify-content: space-around
+        &__grid
+            &-item
+                &:nth-child(1)
+                    margin-right: 30px
+
+@media ( max-width: 992px )
+    .container
+        max-width: 720px
+    .about
+        &__grid
+            grid-template-columns: 300px 380px
+            &-item
+                max-width: 380px
+                &:nth-child(1)
+                    grid-column: auto
+                    grid-row: 1 / 6
+                &:nth-child(2)
+                    grid-column: auto
+                &:nth-child(3)
+                    grid-column: auto
+                &:nth-child(4)
+                    max-width: none
+                    grid-column: auto
+                &:nth-child(5)
+                    max-width: none
+                    grid-column: auto
+                &:nth-child(6)
+                    max-width: none
+                    grid-column: auto
+                h2
+                    font-size: 30px
+        &__flex
+            justify-content: space-evenly
+        &__tag
+            max-width: 85%
+        &__text
+            font-size: 13px
+        &__descr
+            &::before
+                left: -50px
+        &__photo
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+@media ( max-width: 768px )
+    .container
+        max-width: 540px
+    .title
+        &_fz48
+            font-size: 28px
+    .promo
+        &__title
+            line-height: 39px
+            width: 300px
+    .about
+        padding-top: 40px
+        &__grid
+            grid-template: auto / 1fr
+            gap: 20px
+            &-item
+                &:nth-child(1)
+                    margin: 0 auto 20px
+                    grid-row: unset
+        &__photo
+            width: 100%
+            grid-row: unset
+            height: 340px
+        &__descr
+            &::before
+                left: -60px
+
+@media ( max-width: 576px )
+    .container
+        width: 100%
+        padding: 0 10px
+    .title
+        &_fz48
+            font-size: 26px
+    .hamburger
+        right: 20px
+    .menu
+        &__block
+            width: 250px
+        &__list
+            padding-left: 20px
+            padding-right: 0
+    .promo
+        background: url(../img/Background.jpg) no-repeat 57%/cover
+        &__btns
+            margin-top: 30px
+        &__title
+            width: 285px
+    .about
+        h2
+            font-size: 24px
+        &__text
+            font-size: 14px
+        &__tag
+            max-width: 200px
+        &__descr
+            &::before
+                left: -67px
+
+
+    
