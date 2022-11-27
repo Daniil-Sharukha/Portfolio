@@ -115,7 +115,12 @@
         <div class="container">
             <div class="about__grid">
                 <div class="about__grid-item about__photo">
-                    <img src="img/Photo.jpg" alt="Photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/Photo.min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/Photo.jpg">
+                        <img src="img/Photo.jpg" alt="Photo">
+                    </picture>
+                     
                 </div>
                 <div class="about__grid-item">
                     <div class="title title_fz16 about__suptitle">Про меня</div>
@@ -129,7 +134,7 @@
                 </div>
 
                 <div class="about__grid-item about__flex">
-                    <img src="icons/name/web development.svg" alt="Web" class="about__icon">
+                    <img src="icons/name/WebDevelopment.svg" alt="Web" class="about__icon">
                     <div class="about__tag">
                         <div class="title title_fz14">Web-разработка</div>
                         <div class="about__descr">
@@ -139,7 +144,7 @@
                 </div>
 
                 <div class="about__grid-item about__flex">
-                    <img src="icons/name/Mobile dev.svg" alt="Mobile" class="about__icon">
+                    <img src="icons/name/MobileDev.svg" alt="Mobile" class="about__icon">
                     <div class="about__tag">
                         <div class="title title_fz14">Разработка приложений</div>
                         <div class="about__descr">
@@ -495,12 +500,12 @@
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
 
                     <form action="#" class="contacts__form">
-                        <div class="contacts__input">
+                        <div class="contacts__input contacts__name">
                             <input required name="name" type="text" id="name">
                             <label for="name">Ваше имя</label>
                         </div>
 
-                        <div class="contacts__input">
+                        <div class="contacts__input contacts__email">
                             <input required name="email" type="email" id="email">
                             <label for="email">Ваша почта</label>
                         </div>
@@ -513,7 +518,7 @@
                         <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__policy">
-                                <input required type="checkbox" name="" id="">
+                                <input required type="checkbox" name="checkbox" id="checkbox">
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
